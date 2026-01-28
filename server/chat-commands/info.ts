@@ -2168,6 +2168,9 @@ export const commands: Chat.ChatCommands = {
 		if (showAll || ['lostpassword', 'password', 'lostpass'].includes(target)) {
 			buffer.push(`Until an email server for Pokemon Showdown is set up, <b>it is no longer possible to reset the password for your account</b>`);
 		}
+		if (showAll || ['lmao'].includes(target)) {
+			buffer.push('man idfk');
+		}
 		if (!buffer.length && target) {
 			this.errorReply(`'${target}' is an invalid FAQ.`);
 			return this.parse(`/help faq`);
