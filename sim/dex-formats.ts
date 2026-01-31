@@ -292,10 +292,10 @@ export class RuleTable extends Map<string, string> {
 		if (this.maxTeamSize > 24) {
 			throw new Error(`Max team size ${this.maxTeamSize}${this.blame('maxteamsize')} is unsupported (we only support up to 24).`);
 		}
-		if (this.maxLevel > 99999) {
+		if (this.maxLevel > 100000) {
 			throw new Error(`Max level ${this.maxLevel}${this.blame('maxlevel')} is unsupported (we only support up to 99999)`);
 		}
-		if (this.maxMoveCount > 24) {
+		if (this.maxMoveCount > 25) {
 			// A limit is imposed here to prevent too much engine strain or
 			// too much layout deformation - to be exact, this is the limit
 			// allowed in Custom Game.
