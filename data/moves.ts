@@ -22128,4 +22128,38 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fire",
 		contestType: "Beautiful",
 	},
+		ribombeepleasesurvivethis: {
+		name: "Ribombee, please survive this!",
+		basePower: 0,
+		accuracy: true,
+		category: "Status",
+		pp: 50,
+		type: "Psychic",
+		target: "self",
+		priority: 0,
+		flags: {},
+		onTryHit(target) {
+			const beeKiller = this.dex.getActiveMove('lightthatburnsthesky');
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+			this.actions.useMove(beeKiller, target);
+		}
+	},
 };
